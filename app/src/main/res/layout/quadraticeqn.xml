@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4B5"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+
+        android:textSize="25dp"
+        android:textColor="#800000"
+        android:layout_weight="0.04"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter first number"
+        android:textColor="#800000"
+        android:textColorHint="#800000"
+        android:textSize="25dp"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter second number"
+        android:textColorHint="#800000"
+        android:textColor="#800000"
+        android:textSize="25dp"
+        android:inputType="numberDecimal"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter third number"
+        android:textColorHint="#800000"
+        android:textColor="#800000"
+        android:textSize="25dp"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#800000"
+        android:text="Calculate"
+        android:textSize="20dp"
+
+        android:textColor="#ffffff"
+        android:layout_marginBottom="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

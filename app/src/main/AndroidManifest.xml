@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ang.calculator">
+
+    <application
+        android:allowBackup="true"
+        android:label="Calculator"
+        android:icon="@drawable/calculator"
+        android:supportsRtl="true"
+        android:theme="@style/Base.V7.Theme.AppCompat.Light">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstPageActivity" />
+        <activity android:name=".MainActivity"
+            android:icon="@drawable/scien"
+            android:label="Simple/scientific"/>
+        <activity android:name=".QuadraticActivity"
+            android:icon="@drawable/equation"
+            android:label="Quadratics Equation"/>
+        <activity android:name=".SimpeinterestActivity"
+            android:icon="@drawable/simple"
+            android:label="Simple Interest"/>
+    </application>
+
+</manifest>

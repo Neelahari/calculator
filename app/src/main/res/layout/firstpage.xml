@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/simple_scientific"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+        android:background="@drawable/scien"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/equation"
+        android:layout_alignStart="@+id/equation"/>
+
+    <TextView
+        android:id="@+id/simpletxt"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Simple/Scientific"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#E74C3C"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/simple_scientific"
+        android:layout_toEndOf="@+id/simple_scientific"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+
+    <ImageButton
+        android:id="@+id/equation"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/equation"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_below="@+id/simple_scientific"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/simpleInterest"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/simple"
+        android:layout_above="@+id/simple_scientific"
+        android:layout_alignLeft="@+id/simple_scientific"
+        android:layout_alignStart="@+id/simple_scientific"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/interesttxt"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Simple Interest"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:textColor="#E74C3C"
+        android:layout_alignBottom="@+id/simpleInterest"
+        android:layout_alignLeft="@+id/simpletxt"
+        android:layout_alignStart="@+id/simpletxt"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:id="@+id/eqn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Equations"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#E74C3C"
+        android:layout_marginTop="30dp"
+        android:layout_alignTop="@+id/equation"
+        android:layout_alignLeft="@+id/simpletxt"
+        android:layout_alignStart="@+id/simpletxt" />
+
+
+
+</RelativeLayout>
