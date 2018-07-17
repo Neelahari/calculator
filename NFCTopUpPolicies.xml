@@ -3,21 +3,6 @@
         <base />
         <rate-limit-by-key calls="100" renewal-period="60" counter-key="@(context.Request.Headers.GetValueOrDefault('DeviceID'))" />        
         <quota-by-key calls="1000000" bandwidth="10000" renewal-period="2629800" counter-key="@(context.Request.Headers.GetValueOrDefault('DeviceID'))" />
-      <check-header name="Authorization" failed-check-httpcode="401" failed-check-error-message="Not authorized" ignore-case="true">
-        <value>
-          @{string value = context.Request.Headers.GetValueOrDefault("Authorization", "");
-          string[] authHeaderParts = value.Split(' ');
-          if (authHeaderParts[0].Equals("Bearer", StringComparison.InvariantCultureIgnoreCase))
-          {
-          return value;
-          }
-          else
-          {
-          return null;
-          }
-          }
-        </value>
-      </check-header>
-      <set-backend-service base-url="https://nfctopup.azurewebsites.net/" />
+        <set-backend-service base-url="https://nfctopup.azurewebsites.net/" />
     </inbound>
 </policies>
